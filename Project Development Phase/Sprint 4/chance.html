@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>University Admit Eligibility Predictor</title>
+</head>
+<body class="header">
+    <section class="head">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="color: white; font-size: 35px;">University Admit Eligibility Predictor</a>
+            <form id="form" action="http://127.0.0.1:5000/login" method="POST">
+                    <button  type="submit" class="btn btn-danger">
+                        Log Out
+                    </button>
+            </form>
+        </nav>
+    </section>
+    <div class="main">
+        <h1 style="color: white; ">Hi {{prediction[0]}}, you have {{prediction[1]}}% of chance to get admit</h1>
+        <br><br>
+        <form id="form" action="http://127.0.0.1:5000/dashboard" method="GET">
+            <div style="text-align: center;">
+                <button  type="submit" class="btn btn-light">
+                    Back to the dashboard!
+                </button>
+            </div>
+        </form>
+      </div>
+</body>

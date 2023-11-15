@@ -1,0 +1,26 @@
+.header {
+  font-family: 'Poppins', sans-serif;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/universityback.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+  .main{
+    margin-top: 2%;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    padding: 10px;
+    width: 45%;
+  }
+  .head{
+    padding: 20px;
+  }
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 1px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }

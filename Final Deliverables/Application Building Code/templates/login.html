@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/sty.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>University Admit Eligibility Predictor</title>
+</head>
+<body class="header">
+    <section class="head">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="color: white; font-size: 35px;">University Admit Eligibility Predictor</a>
+        </nav>
+    </section>
+    <section class="main">
+                <div class="card" >
+                    <div class="card-body">
+                        <h4 class="card-title" style="text-align: center;">Log In</h4>
+                    <div class="container">
+                        <form id="form" action="http://127.0.0.1:5000/dashboard" method="POST">
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" class="form-control" name="uname" placeholder="Username" style="margin: 15px; width: 270px;" autofocus required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" class="form-control" name="pass" placeholder="Password" style="margin: 15px; width: 270px;" required>
+                                </div>
+                            </div>
+                            <div style="text-align: center; margin: 5px;">
+                                <input class="btn btn-secondary" type="submit" style="padding: 8px 20px;" value="Log IN">
+                            </div>
+                        </form>
+                        <br>
+                        <form id="form" action="http://127.0.0.1:5000" method="GET">
+                            <div style="text-align: center;">
+                                <p>New User? </p>
+                                <button  type="submit" class="btn btn-primary">
+                                    Create your account
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+    </section>
+</body>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/stylee.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <title>University Admit Eligibility Predictor</title>
+</head>
+<body class="header">
+    <section class="head" style="padding: 20px;">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="color: white; font-size: 35px;">University Admit Eligibility Predictor</a>
+            <form id="form" action="http://127.0.0.1:5000/login" method="POST">
+                    <button  type="submit" class="btn btn-danger">
+                        Log Out
+                    </button>
+            </form>
+        </nav>
+    </section>
+<div class="main">
+    <div style="margin-bottom: 30px;">
+        <form id="form" action="http://127.0.0.1:5000/predict" method="POST">
+            <div style="text-align: center;">
+                <button  type="submit" class="btn btn-secondary">
+                    Check Your Eligibility!
+                </button>
+            </div>
+        </form>
+    </div>
+    <h5 style="text-align: center; color:white">You can visualize the trends in admission from the below graphs</h5>
+    <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+            <img src="../static/gre.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Distribution of chance of admit over GRE scores</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+            <img src="../static/toefl.png" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Distribution of chance of admit over TOEFL scores</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+            <img src="../static/sop.png" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Distribution of chance of admit over SOP rating</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+            <img src="../static/lor.png" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Distribution of chance of admit over LOR rating</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+            <img src="../static/cgpa.png" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Distribution of chance of admit over CGPA</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+            <img src="../static/res.png" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Distribution of chance of admit over Research options</div>
+    </div>
+</div>
+</body>
+</html>
+
+

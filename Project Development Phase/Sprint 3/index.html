@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>University Admit Eligibility Predictor</title>
+</head>
+<body class="header">
+    <section class="head">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="color: white; font-size: 35px;">University Admit Eligibility Predictor</a>
+            <form id="form" action="http://127.0.0.1:5000/login" method="POST">
+                    <button  type="submit" class="btn btn-danger">
+                        Log Out
+                    </button>
+            </form>
+        </nav>
+    </section>
+    <section class="main">
+        
+                <div class="card" >
+                    <div class="card-body">
+                    <h4 class="card-title">Enter the details here</h4>
+                    <div class="container">
+                        <form id="form" action="http://127.0.0.1:5000/result" method="POST">
+                            <div class="form-row">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="pname" placeholder="Name" style="margin: 15px;" autofocus required>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <input type="number" class="form-control" name="cgpa" placeholder="CGPA" style="margin: 15px;"min="6" max="10" step="0.01" required>
+                            </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-group mb-3" style="margin: 15px;">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">University Rating</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01" name="university">
+                                            <option selected value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-group mb-3" style="margin: 15px;">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect02">SOP Rating</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect02" name="sop">
+                                            <option selected value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-group mb-3" style="margin: 15px;">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect03">LOR Rating</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect03" name="lor">
+                                            <option selected value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="research" placeholder="Research option" style="margin: 15px;" min="0" max="1" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="gre" placeholder="GRE score" min="260" max="340" style="margin: 15px;" required>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="toefl" placeholder="TOEFL score" max="120" style="margin: 15px;" required>
+                                </div>
+                            </div>
+                            <div style="text-align: center; margin: 5px;">
+                                <input class="btn btn-secondary" type="submit" style="padding: 8px 30px;" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            
+    </section>
+    <section class="footer">
+        <div style="color: white;"> 
+            <p>&#169; Copyrights reserved</p>
+        </div>
+    </section>
+</body>
